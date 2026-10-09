@@ -17,27 +17,33 @@
 <header class="nav" id="nav">
   <a class="logo" href="#top">Noman Khan</a>
   <nav id="menu">
-    <a href="#projects">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#journey">Journey</a>
+    <a href="#projects" data-fr="Projets">Projects</a><a href="#research" data-fr="Recherche">Research</a><a href="#skills" data-fr="Compétences">Skills</a><a href="#journey" data-fr="Parcours">Journey</a>
     <a class="cta" href="#contact">Contact</a>
   </nav>
-  <button class="icon" id="theme" aria-label="Toggle dark mode">◐</button>
+  <button class="icon" id="lang" aria-label="Français / English">FR</button><button class="icon" id="theme" aria-label="Toggle dark mode">◐</button>
   <button class="icon burger" id="burger" aria-label="Menu">☰</button>
 </header>
 
 <main id="top">
 <section class="hero container">
   <div class="hero-copy">
-    <p class="status"><i></i> Open to internships &amp; research opportunities · from January 2027</p>
-    <h1>I build technology that <span id="typed" aria-live="polite">sees</span><b class="caret">|</b></h1>
-    <p class="lead">Hi, I'm Noman, an M2 student in Biometrics &amp; Intelligent Systems at UPEC (Paris). I work at the intersection of research and engineering: AI, computer vision and software, with a published paper on deep learning for solar-panel defect detection.</p>
+    <p class="status"><i></i><span data-fr="Ouvert aux stages et opportunités de recherche · dès janvier 2027">Open to internships &amp; research opportunities · from January 2027</span></p>
+    <h1><span data-fr="Je construis des technologies qui">I build technology that</span> <span id="typed" aria-live="polite">sees</span><b class="caret">|</b></h1>
+    <p class="lead" data-fr="Bonjour, je suis Noman, étudiant en M2 Biométrie et Systèmes Intelligents à l'UPEC (Paris). Je travaille entre recherche et ingénierie : IA, vision par ordinateur et logiciel, avec un article publié sur la détection de défauts de panneaux solaires par deep learning.">Hi, I'm Noman, an M2 student in Biometrics &amp; Intelligent Systems at UPEC (Paris). I work at the intersection of research and engineering: AI, computer vision and software, with a published paper on deep learning for solar-panel defect detection.</p>
     <div class="actions">
-      <a class="btn primary" href="#projects">See my work</a>
-      <a class="btn" href="#contact">Work with me</a>
+      <a class="btn primary" href="#projects" data-fr="Voir mes projets">See my work</a>
+      <a class="btn" href="#contact" data-fr="Travaillons ensemble">Work with me</a>
+    </div>
+    <div class="links">
+      <a href="mailto:noman.khan.job@gmail.com">Email</a>
+      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/noman-khan-b90914289">LinkedIn</a>
+      <a target="_blank" rel="noopener" href="https://github.com/Noman-Corp">GitHub</a>
+      <span data-fr="Paris, France · disponible dans toute l'Europe">Paris, France · open across Europe</span>
     </div>
     <ul class="facts">
-      <li><strong>15/20</strong> M1 result, with honors</li>
-      <li><strong>3.79/4</strong> BS IT CGPA, silver medalist</li>
-      <li><strong>1</strong> published CNN research paper</li>
+      <li><strong>15/20</strong> <span data-fr="M1, mention honorable">M1 result, with honors</span></li>
+      <li><strong>3.79/4</strong> <span data-fr="Licence IT, médaille d'argent">BS IT CGPA, silver medalist</span></li>
+      <li><strong>1</strong> <span data-fr="article de recherche publié (CNN)">published CNN research paper</span></li>
     </ul>
   </div>
   <figure class="scan" id="scan">
@@ -51,7 +57,7 @@
 </section>
 
 <section id="about" class="container section about">
-  <h2>From building software to doing research in intelligent systems.</h2>
+  <h2 data-fr="Du développement logiciel à la recherche en systèmes intelligents.">From building software to doing research in intelligent systems.</h2>
   <div class="cols">
     <p>I started in Information Technology, where I finished a BS with a 3.79/4 CGPA and a silver medal. I worked as a software developer at RAGE Custom while completing Python, data science and AI courses on Coursera. In my final bachelor year I co-authored <em>SolarAI</em>, a CNN-based system for spotting defects in solar panels.</p>
     <p>That led me to Paris and a Master's at UPEC in Biometrics &amp; Intelligent Systems. I completed M1 (2025–2026) with honors and I'm now in M2 (2026–2027), looking for an internship or research opportunity where I can apply machine learning, computer vision and solid engineering to real problems.</p>
@@ -59,7 +65,7 @@
 </section>
 
 <section id="projects" class="container section">
-  <div class="head"><h2>Projects</h2>
+  <div class="head"><h2 data-fr="Projets">Projects</h2>
     <div class="chips" id="pfilter" role="group" aria-label="Filter projects">
       <button class="on" data-f="all">All</button><button data-f="cv">Computer vision</button><button data-f="ml">ML / DL</button><button data-f="sw">Software &amp; data</button>
     </div></div>
@@ -69,11 +75,11 @@
 <section id="research" class="container section">
   <div class="paper">
     <div>
-      <h2>Published research: SolarAI</h2>
+      <h2 data-fr="Recherche publiée : SolarAI">Published research: SolarAI</h2>
       <p class="sub">Solar-Panel Optimization &amp; Defect Resolution using CNN</p>
       <p>A convolutional neural network approach to detect defects in solar panels so they can be found and fixed early, keeping energy output high. Written with my colleagues during my final bachelor year and published on ResearchGate.</p>
       <div class="tags"><span>CNN</span><span>Deep Learning</span><span>Image Classification</span><span>Renewable Energy</span><span>Python</span></div>
-      <a class="btn primary" target="_blank" rel="noopener" href="https://www.researchgate.net/publication/385549917_SolarAI_Solar-Panel_Optimization_Defect_Resolution_using_CNN">Read the paper</a>
+      <a class="btn primary" data-fr="Lire l'article" target="_blank" rel="noopener" href="https://www.researchgate.net/publication/385549917_SolarAI_Solar-Panel_Optimization_Defect_Resolution_using_CNN">Read the paper</a>
     </div>
     <div class="pipeline" aria-label="Pipeline">
       <div>Panel image</div><div>Preprocess</div><div>CNN</div><div class="hot">Defect / OK</div>
@@ -82,13 +88,13 @@
 </section>
 
 <section id="skills" class="container section">
-  <div class="head"><h2>Skills</h2>
+  <div class="head"><h2 data-fr="Compétences">Skills</h2>
     <div class="chips" id="sfilter"><button class="on" data-f="all">Everything</button><button data-f="ai">AI &amp; ML</button><button data-f="cv">Vision</button><button data-f="dev">Software</button><button data-f="soft">Working style</button></div></div>
   <div class="skills" id="sgrid"></div>
 </section>
 
 <section id="journey" class="container section">
-  <h2>Journey</h2>
+  <h2 data-fr="Parcours">Journey</h2>
   <ol class="timeline">
     <li><time>2026 – 2027</time><h3>M2 Biometrics &amp; Intelligent Systems</h3><p>Université Paris-Est Créteil (UPEC), France. Looking for an internship or research opportunity from January 2027.</p></li>
     <li><time>2024 – 2025</time><h3>Software Developer, RAGE Custom</h3>
@@ -103,12 +109,12 @@
 </section>
 
 <section id="contact" class="container section contact">
-  <h2>Let's work on something together.</h2>
-  <p class="lead">Looking for an M2 internship from January 2027, and open to research and other opportunities, in AI, computer vision, machine learning, biometrics or software. France or abroad.</p>
+  <h2 data-fr="Travaillons ensemble.">Let's work on something together.</h2>
+  <p class="lead" data-fr="Je recherche un stage de M2 dès janvier 2027, et je suis ouvert à la recherche et à d'autres opportunités en IA, vision par ordinateur, machine learning, biométrie ou développement logiciel. France ou Europe.">Looking for an M2 internship from January 2027, and open to research and other opportunities, in AI, computer vision, machine learning, biometrics or software. France or abroad.</p>
   <div class="actions">
-    <a class="btn primary" href="mailto:noman.khan.job@gmail.com?subject=Opportunity%20for%20Noman%20Khan">Email me</a>
-    <button class="btn" id="copy">Copy email address</button>
-    <a class="btn" id="li" href="#" hidden>LinkedIn</a><a class="btn" id="gh" href="#" hidden>GitHub</a>
+    <a class="btn primary" data-fr="Écrivez-moi" href="mailto:noman.khan.job@gmail.com?subject=Opportunity%20for%20Noman%20Khan">Email me</a>
+    <button class="btn" id="copy" data-fr="Copier l'adresse e-mail">Copy email address</button>
+    <a class="btn" id="li" target="_blank" rel="noopener" href="https://www.linkedin.com/in/noman-khan-b90914289">LinkedIn</a><a class="btn" id="gh" target="_blank" rel="noopener" href="https://github.com/Noman-Corp">GitHub</a>
   </div>
   <p class="small">noman.khan.job@gmail.com · Paris, France</p>
 </section>

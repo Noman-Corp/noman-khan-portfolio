@@ -1,5 +1,5 @@
 // ---- Edit these two lines, then redeploy. Leave '' to hide the button. ----
-const LINKS={linkedin:'',github:''};
+const LINKS={linkedin:'https://www.linkedin.com/in/noman-khan-b90914289',github:'https://github.com/Noman-Corp'};
 
 const PROJECTS=[
  {k:'cv ml',type:'Master\'s project',t:'Facial Biometrics System',d:'Face verification (1:1) and identification (1:N) built on face embeddings, with tracked evaluation.',tags:['Python','FaceNet','MTCNN','OpenCV','MLflow'],more:['Face detection and alignment, then embedding extraction with FaceNet.','Verification and identification modes evaluated with distance thresholds.','Experiments logged and compared with MLflow.']},
@@ -26,7 +26,7 @@ if(saved)root.dataset.theme=saved;else if(matchMedia('(prefers-color-scheme:dark
 $('#theme').onclick=()=>{const d=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=d;localStorage.setItem('theme',d)};
 
 // typing roles
-const roles=['sees.','learns.','solves problems.','lasts.','ships.'];let ri=0,ci=0,del=false;
+const ROLES={en:['sees.','learns.','solves problems.','lasts.','ships.'],fr:['voient.','apprennent.','résolvent des problèmes.','durent.','fonctionnent.']};let roles=ROLES.en,ri=0,ci=0,del=false;
 (function type(){const w=roles[ri],el=$('#typed');el.textContent=w.slice(0,ci);
  if(!del&&ci===w.length){del=true;return setTimeout(type,1500)}
  if(del&&ci===0){del=false;ri=(ri+1)%roles.length}
@@ -52,5 +52,11 @@ $('#sgrid').innerHTML=SKILLS.map(s=>`<div class="sk" data-g="${s.g}"><h3>${s.t}<
 filt('#sfilter','.sk','g');
 
 // contact
-$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText('noman.khan.job@gmail.com');e.target.textContent='Copied ✓'}catch{e.target.textContent='noman.khan.job@gmail.com'}setTimeout(()=>e.target.textContent='Copy email address',2200)};
+$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText('noman.khan.job@gmail.com');e.target.textContent=lang==='fr'?'Copié ✓':'Copied ✓'}catch{e.target.textContent='noman.khan.job@gmail.com'}setTimeout(()=>e.target.textContent=e.target.dataset.en,2200)};
 [['li','linkedin'],['gh','github']].forEach(([id,k])=>{if(LINKS[k]){const a=$('#'+id);a.href=LINKS[k];a.target='_blank';a.rel='noopener';a.hidden=false}});
+
+// EN / FR toggle
+var lang=localStorage.getItem('lang')||((navigator.language||'').startsWith('fr')?'fr':'en');
+function setLang(l){lang=l;localStorage.setItem('lang',l);document.documentElement.lang=l;roles=ROLES[l];ri=0;ci=0;del=false;
+ $$('[data-fr]').forEach(el=>{if(!el.dataset.en)el.dataset.en=el.innerHTML;el.innerHTML=l==='fr'?el.dataset.fr:el.dataset.en});$('#lang').textContent=l==='fr'?'EN':'FR'}
+$('#lang').onclick=()=>setLang(lang==='fr'?'en':'fr');setLang(lang);
