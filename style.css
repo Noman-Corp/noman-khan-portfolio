@@ -66,3 +66,10 @@ nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column
 .card .hint{display:block;margin-top:12px;font-size:13px;color:var(--acc);font-weight:600}
 dialog .actions{margin:18px 0 6px}dialog .req{font-size:14px;color:var(--mute);margin:8px 0 0}
 @media(max-width:820px){.feat{grid-template-columns:1fr;padding:26px}}
+.job{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--hot);border-radius:18px;padding:32px 36px;margin-bottom:16px}
+.job-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.job h3{font-size:clamp(22px,2.6vw,30px);margin-top:4px}
+.job time{font:700 18px "Bricolage Grotesque",sans-serif;color:var(--acc);white-space:nowrap}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}.badges span{background:var(--ink);color:var(--bg);font-size:13.5px;font-weight:600;padding:5px 13px;border-radius:99px}
+.job ul{margin:10px 0 0;padding-left:20px}.job li{margin:6px 0}.job p{color:var(--mute);margin:8px 0 0}
+.job.second{border-left-color:var(--line);padding:22px 36px}.job.second h3{font-size:20px}
+@media(max-width:820px){.job{padding:24px}.job-head{flex-direction:column}}
