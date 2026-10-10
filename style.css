@@ -58,3 +58,11 @@ dialog h3{font-size:28px;margin:4px 0 12px}dialog ul{padding-left:20px;color:var
 nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);padding:12px;border-bottom:1px solid var(--line)}.nav.open nav{display:flex}.paper{padding:28px}.scan{max-width:380px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .links{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:15px;color:var(--mute)}.links a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--acc)}.links a:hover{color:var(--hot);border-color:var(--hot)}
+.role{font:700 clamp(17px,2vw,22px) "Bricolage Grotesque",sans-serif;color:var(--hot);margin:14px 0 0;letter-spacing:.01em}
+.feat{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--acc);border-radius:22px;padding:42px}
+.feat h2{font-size:clamp(26px,3.4vw,38px);margin:6px 0 14px}.feat p{color:var(--mute)}
+.caps{padding-left:20px;color:var(--ink);margin:14px 0}.caps li{margin:4px 0}.note{font-size:14.5px;border-left:3px solid var(--line);padding-left:12px}
+.feat .pipeline div{border:1px dashed var(--line);color:var(--ink)}.feat .pipeline div+div:before{color:var(--mute)}
+.card .hint{display:block;margin-top:12px;font-size:13px;color:var(--acc);font-weight:600}
+dialog .actions{margin:18px 0 6px}dialog .req{font-size:14px;color:var(--mute);margin:8px 0 0}
+@media(max-width:820px){.feat{grid-template-columns:1fr;padding:26px}}

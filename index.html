@@ -17,7 +17,7 @@
 <header class="nav" id="nav">
   <a class="logo" href="#top">Noman Khan</a>
   <nav id="menu">
-    <a href="#projects" data-fr="Projets">Projects</a><a href="#research" data-fr="Recherche">Research</a><a href="#skills" data-fr="Compétences">Skills</a><a href="#journey" data-fr="Parcours">Journey</a>
+    <a href="#featured" data-fr="Biométrie">Biometrics</a><a href="#projects" data-fr="Projets">Projects</a><a href="#research" data-fr="Recherche">Research</a><a href="#skills" data-fr="Compétences">Skills</a><a href="#journey" data-fr="Parcours">Journey</a>
     <a class="cta" href="#contact">Contact</a>
   </nav>
   <button class="icon" id="lang" aria-label="Français / English">FR</button><button class="icon" id="theme" aria-label="Toggle dark mode">◐</button>
@@ -29,6 +29,7 @@
   <div class="hero-copy">
     <p class="status"><i></i><span data-fr="Ouvert aux stages et opportunités de recherche · dès janvier 2027">Open to internships &amp; research opportunities · from January 2027</span></p>
     <h1><span data-fr="Je construis des technologies qui">I build technology that</span> <span id="typed" aria-live="polite">sees</span><b class="caret">|</b></h1>
+    <p class="role" data-fr="Vision par ordinateur · Biométrie · IA appliquée">Computer Vision · Biometrics · Applied AI</p>
     <p class="lead" data-fr="Bonjour, je suis Noman, étudiant en M2 Biométrie et Systèmes Intelligents à l'UPEC (Paris). Je travaille entre recherche et ingénierie : IA, vision par ordinateur et logiciel, avec un article publié sur la détection de défauts de panneaux solaires par deep learning.">Hi, I'm Noman, an M2 student in Biometrics &amp; Intelligent Systems at UPEC (Paris). I work at the intersection of research and engineering: AI, computer vision and software, with a published paper on deep learning for solar-panel defect detection.</p>
     <div class="actions">
       <a class="btn primary" href="#projects" data-fr="Voir mes projets">See my work</a>
@@ -61,6 +62,28 @@
   <div class="cols">
     <p>I started in Information Technology, where I finished a BS with a 3.79/4 CGPA and a silver medal. I worked as a software developer at RAGE Custom while completing Python, data science and AI courses on Coursera. In my final bachelor year I co-authored <em>SolarAI</em>, a CNN-based system for spotting defects in solar panels.</p>
     <p>That led me to Paris and a Master's at UPEC in Biometrics &amp; Intelligent Systems. I completed M1 (2025–2026) with honors and I'm now in M2 (2026–2027), looking for an internship or research opportunity where I can apply machine learning, computer vision and solid engineering to real problems.</p>
+  </div>
+</section>
+
+<section id="featured" class="container section">
+  <div class="feat">
+    <div>
+      <span class="kind" data-fr="Projet phare">Featured project</span>
+      <h2 data-fr="Biométrie faciale avec évaluation assistée par LLM">Facial biometrics with LLM-assisted evaluation</h2>
+      <p>A Flask research application for face verification (1:1) and identification (1:N). It uses MTCNN for detection and alignment, FaceNet embeddings and cosine similarity for matching, and an optional LLM (OpenAI or a local Qwen model through Ollama) to explain metrics and individual decisions.</p>
+      <ul class="caps">
+        <li>Enrollment with local template storage and image quality checks (blur, lighting, resolution, tilt, multiple faces)</li>
+        <li>Verification metrics: FAR, FRR, EER, ROC, DET, threshold sweeps and score distributions</li>
+        <li>Identification metrics: Rank-1, Rank-k and CMC curves</li>
+        <li>Robustness tests for illumination, blur, resolution and compression</li>
+        <li>Web dashboard with audit logs, and experiment tracking with MLflow</li>
+      </ul>
+      <p class="note">A local research prototype built for experimentation and demonstration on LFW-style datasets, not a production identity system. LLM explanations are decision support, not ground truth.</p>
+      <div class="actions"><a class="btn primary" target="_blank" rel="noopener" href="https://github.com/Noman-Corp/facial-biometrics-llm" data-fr="Voir le code sur GitHub">View code on GitHub</a></div>
+    </div>
+    <div class="pipeline" aria-label="Pipeline">
+      <div>Face image</div><div>MTCNN: detect &amp; align</div><div>FaceNet: embedding</div><div>Cosine matching: 1:1 / 1:N</div><div>FAR · FRR · EER · ROC · CMC</div><div class="hot">LLM explanation</div>
+    </div>
   </div>
 </section>
 
@@ -97,6 +120,7 @@
   <h2 data-fr="Parcours">Journey</h2>
   <ol class="timeline">
     <li><time>2026 – 2027</time><h3>M2 Biometrics &amp; Intelligent Systems</h3><p>Université Paris-Est Créteil (UPEC), France. Looking for an internship or research opportunity from January 2027.</p></li>
+    <li><time>2026</time><h3>AI Prompt Engineering Assistant, Connexion Paris</h3><p>Part-time. Wrote and tested prompts for the company's AI products and evaluated model responses.</p></li>
     <li><time>2024 – 2025</time><h3>Software Developer, RAGE Custom</h3>
       <ul><li>Designed and delivered software for client needs, talking directly with clients to understand requirements.</li><li>Managed tasks and deadlines in a collaborative team, adapting quickly as priorities shifted.</li><li>Kept quality high through attention to detail, reliable follow-through and strong digital skills.</li></ul></li>
     <li><time>2025 – 2026</time><h3>M1 Biometrics &amp; Intelligent Systems</h3><p>UPEC. Completed with honors (15/20). Face recognition, image processing, machine learning.</p></li>
@@ -105,7 +129,7 @@
     <li><time>Final bachelor year</time><h3>SolarAI research paper</h3><p>Co-authored a CNN-based solar-panel defect detection paper with colleagues.</p></li>
     <li><time>Bachelor's</time><h3>BS Information Technology</h3><p>PMAS-Arid Agriculture University Rawalpindi, Pakistan. CGPA 3.79/4.00, silver medalist.</p></li>
   </ol>
-  <div class="langs"><span><b>English</b> C1</span><span><b>French</b> A1, learning</span><span><b>Urdu</b> native</span></div>
+  <div class="langs"><span><b>English</b> C1</span><span><b>French</b> B1</span><span><b>Urdu</b> native</span></div>
 </section>
 
 <section id="contact" class="container section contact">
